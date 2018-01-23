@@ -3,31 +3,35 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.openminted</groupId>
 	<artifactId>registry-core-service</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.4.2-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<parent>
 		<groupId>eu.openminted</groupId>
 		<artifactId>registry-parent</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.1</version>
 	</parent>
+
+	<properties>
+		<registry.core>1.4.2-SNAPSHOT</registry.core>
+	</properties>
 
 	<dependencies>
 
 		<dependency>
 			<groupId>eu.openminted</groupId>
 			<artifactId>registry-core-api</artifactId>
-			<version>1.0.0</version>
+			<version>${registry.core}</version>
 		</dependency>
 		<dependency>
 			<groupId>eu.openminted</groupId>
 			<artifactId>registry-core-rest</artifactId>
-			<version>1.0.0</version>
+			<version>${registry.core}</version>
 		</dependency>
 		<dependency>
 			<groupId>eu.openminted</groupId>
 			<artifactId>registry-core</artifactId>
-			<version>1.0.0</version>
+			<version>${registry.core}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -38,6 +42,26 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>RELEASE</version>
 		</dependency>
 	</dependencies>
 

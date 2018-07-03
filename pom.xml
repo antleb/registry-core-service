@@ -1,19 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>eu.openminted</groupId>
 	<artifactId>registry-core-service</artifactId>
-	<version>1.4.2-SNAPSHOT</version>
+	<version>1.4.6-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<parent>
 		<groupId>eu.openminted</groupId>
-		<artifactId>registry-parent</artifactId>
-		<version>1.0.1</version>
+		<artifactId>registry</artifactId>
+		<version>1.4.6-SNAPSHOT</version>
 	</parent>
 
 	<properties>
-		<registry.core>1.4.2-SNAPSHOT</registry.core>
+		<registry.core>1.4.6-SNAPSHOT</registry.core>
 	</properties>
 
 	<dependencies>

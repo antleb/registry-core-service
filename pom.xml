@@ -14,7 +14,18 @@
 	<properties>
 		<registry.core>2.0.2-SNAPSHOT</registry.core>
 	</properties>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
 
+	<scm>
+		<connection>scm:git:git://github.com/openminted/registry-core-service.git</connection>
+		<developerConnection>scm:git:ssh://github.com/openminted/registry-core-service.git</developerConnection>
+		<url>https://github.com/openminted/registry-core-service</url>
+	</scm>
 	<dependencies>
 
 		<dependency>

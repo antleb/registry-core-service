@@ -1,1 +1,0 @@
-INSERT INTO users_omg (first_name, last_name) VALUES ('John', 'Diplas');

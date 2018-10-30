@@ -23,7 +23,7 @@ import java.net.URL;
 public class SwaggerConfig {
 
 
-    @Value("${openminted.debug:#{false}}")
+    @Value("${openminted.debug:#{true}}")
     public Boolean isLocalhost;
 
     @Value("${registry.host}")

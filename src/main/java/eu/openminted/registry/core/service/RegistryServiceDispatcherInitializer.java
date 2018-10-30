@@ -1,6 +1,8 @@
 package eu.openminted.registry.core.service;
 
+import eu.openminted.registry.core.configuration.HibernateConfiguration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
 import javax.servlet.Filter;
 
 public class RegistryServiceDispatcherInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
@@ -11,7 +13,10 @@ public class RegistryServiceDispatcherInitializer extends AbstractAnnotationConf
 
         @Override
         protected Class<?>[] getServletConfigClasses() {
-            return new Class[] { RegistryServiceConfiguration.class };
+            return new Class[] {
+                    RegistryServiceConfiguration.class,
+                    HibernateConfiguration.class
+            };
         }
 
         @Override
